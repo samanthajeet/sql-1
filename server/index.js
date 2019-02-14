@@ -24,5 +24,5 @@ app.post('/api/account', ctrl.newAccount)
 
 app.delete('/api/account/:id', ctrl.deleteUser)
 
-app.put('/api/acount/:id', ctrl.updateUser)
+app.put('/api/account/:id', ctrl.updateUser)
 

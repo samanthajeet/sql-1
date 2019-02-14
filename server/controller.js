@@ -38,9 +38,9 @@ module.exports={
     })
   },
 
-  updateUser: (res, req) => {
+  updateUser: (req, res) => {
     const dbInstance = req.app.get('db');
-    const id = +req.params.id;
+    const {id} = req.params;
     const {name, email} = req.body;
 
     dbInstance.updateUser(id, name, email).then( (response) => {
